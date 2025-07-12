@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add Employee</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Add Employee</h2>
+    <form id="employeeForm">
+      <label>First name</label>
+      <input type="text" name="firstName" required />
+
+      <label>Last name</label>
+      <input type="text" name="lastName" required />
+
+      <div class="row">
+        <div class="column">
+          <label>Email</label>
+          <input type="email" name="email" required />
+        </div>
+        <div class="column">
+          <label>Department</label>
+          <select name="department" required>
+            <option value="">Select</option>
+            <option>HR</option>
+            <option>Engineering</option>
+            <option>IT</option>
+            <option>Finance</option>
+          </select>
+        </div>
+      </div>
+
+      <label>Role</label>
+      <select name="role" required>
+        <option value="">Select</option>
+        <option>Manager</option>
+        <option>Developer</option>
+        <option>Analyst</option>
+        <option>Support</option>
+      </select>
+
+      <div class="actions">
+        <button type="button" class="cancel-btn" onclick="location.href='index.html'">Cancel</button>
+        <button type="submit" class="add-btn">Add</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/form.js"></script>
+</body>
+</html>
